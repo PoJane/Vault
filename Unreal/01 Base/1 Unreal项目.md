@@ -99,9 +99,19 @@
 
 ### 2.2 生成项目
 
+> [!NOTE] 关于Intermediate
+> 生成的项目文件被视为中间文件，存储在`PROJECT\Intermediate\ProjectFiles`中，若删除`Intermediate`文件夹则需重新生成项目
+
+- 生成VS工程
+找到`UnrealProject.uproject`文件，选中右键单击`Generate Visual Studio project files`（如果没有可选`显示更多选项`以显示被Windows隐藏的操作）
+
 ### 2.3 编译项目
 
 ---
 ## 其他
 ### 相关链接
-[虚幻引擎目录结构 |  5.5 ](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/unreal-engine-directory-structure)
+[虚幻引擎目录结构](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/unreal-engine-directory-structure)
+[在虚幻引擎中管理游戏代码&生成项目文件](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/managing-game-code-in-unreal-engine)
+[编译虚幻引擎C++游戏项目](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/compiling-game-projects-in-unreal-engine-using-cplusplus)
+
+
