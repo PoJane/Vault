@@ -106,12 +106,48 @@
 找到`UnrealProject.uproject`文件，选中右键单击`Generate Visual Studio project files`（如果没有可选`显示更多选项`以显示被Windows隐藏的操作）
 
 ### 2.3 编译项目
+#### 1. 使用VS进行构建
+- 设置构建配置：Debug/ Development/ Shipping/ Test等
+- 设置解决方案平台：Win64/ Android等
+
+#### 2. 构建项目
+右键解决方案UnrealProject，选择Rebuild来重新编译
+
+## 3. 发布项目
+### 3.1 打包项目
+#### 1. 方式
+1. UAT
+打包使用虚幻自动化工具（Unreal Automation Tool，UAT），通过一组实用脚本（RunUAT）来操控UE项目。打包中UAT使用的特定命令是`BuildCookRun`，此命令可针对特定平台烘培内容，将其打包成平台的原生格式进行发布、部署并自动运行项目（若适用）。
+
+
+> [!NOTE] RunUAT
+> 在`Engine\Build\BatchFiles`目录中，Windows对应RunUAT.bat，Mac/ Linux对应RunUAT.sh
+
+
+2. 编辑器
+也可使用UE工具栏的平台（Platforms），从平台进行选择
+
+3. 命令行
+可使用命令行为平台烘培和打包内容，必须通过`-run=cook`指定阶段，必须指定目标平台，将保存到`PROJECT\Saved\Sandboxed/Cook-[Platform]`
+```powershell
+UnrealEditor.exe [GameName or .uproject] -run=cook -targetplatform=[Platform] -cookonthefly -iterate -map=[Map Name]
+```
+
+#### 2. 阶段
+1. 构建（Build）：为所选平台编译可执行文件
+2. 烘培（Cook）：在特殊模式下执行UE，以此烘培内容
+3. 暂存（Stage）：将可执行文件和内容复制到暂存区域（开发目录外的独立目录）
+4. 打包（Package）：将项目打包成平台的原生发布格式
+5. 部署（Deploy）：将版本部署到目标设备
+6. 运行（Run）：在目标平台上启动已打包的项目
 
 ---
 ## 其他
 ### 相关链接
+- 项目目录/ 项目启动/ 项目编译
 [虚幻引擎目录结构](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/unreal-engine-directory-structure)
 [在虚幻引擎中管理游戏代码&生成项目文件](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/managing-game-code-in-unreal-engine)
 [编译虚幻引擎C++游戏项目](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/compiling-game-projects-in-unreal-engine-using-cplusplus)
 
-
+- 项目发布/ 项目打包
+[构建操作：在虚幻引擎中烘焙、打包、部署、运行项目](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/build-operations-cooking-packaging-deploying-and-running-projects-in-unreal-engine)

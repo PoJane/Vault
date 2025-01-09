@@ -33,6 +33,7 @@
       {
         "id": "0db6b56e01be2aa6",
         "type": "tabs",
+        "dimension": 71.4074074074074,
         "children": [
           {
             "id": "182b18aff9a37330",
@@ -74,6 +75,23 @@
             }
           }
         ]
+      },
+      {
+        "id": "fbf7dc63aeddbf4c",
+        "type": "tabs",
+        "dimension": 28.59259259259259,
+        "children": [
+          {
+            "id": "f785125fb2dbaa82",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,6 +104,7 @@
       {
         "id": "f2b6fdf9546b92b6",
         "type": "tabs",
+        "dimension": 71.83908045977012,
         "children": [
           {
             "id": "d266a2c12afa8927",
@@ -138,11 +157,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Unreal/01 Base/1 Unreal项目.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "1 Unreal项目 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -151,17 +168,8 @@
       {
         "id": "d6cff3d5ee0fd80a",
         "type": "tabs",
+        "dimension": 28.160919540229884,
         "children": [
-          {
-            "id": "f785125fb2dbaa82",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
-            }
-          },
           {
             "id": "49fc5fe3790e9ca8",
             "type": "leaf",
@@ -188,11 +196,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "451582b629e5d692",
+  "active": "f785125fb2dbaa82",
   "lastOpenFiles": [
-    "Pasted image 20250108182929.png",
-    "README.md",
     "Unreal/01 Base/1 Unreal项目.md",
+    "README.md",
+    "Unreal/01 Base/2 Unreal工具.md",
+    "Pasted image 20250108182929.png",
     "Unreal/02 Blueprints/1 蓝图概述.md",
     "Language/01 CPP/1 CPP基础.md",
     "Language/02 CSharp/1 CS基础.md",
