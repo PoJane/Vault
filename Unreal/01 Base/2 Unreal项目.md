@@ -114,7 +114,7 @@
 右键解决方案UnrealProject，选择Rebuild来重新编译
 
 ## 3. 发布项目
-### 3.1 打包项目
+### 3.1 构建管线
 #### 1. 方式
 1. UAT
 打包使用虚幻自动化工具（Unreal Automation Tool，UAT），通过一组实用脚本（RunUAT）来操控UE项目。打包中UAT使用的特定命令是`BuildCookRun`，此命令可针对特定平台烘培内容，将其打包成平台的原生格式进行发布、部署并自动运行项目（若适用）。
@@ -140,6 +140,9 @@ UnrealEditor.exe [GameName or .uproject] -run=cook -targetplatform=[Platform] -c
 4. 打包（Package）：将项目打包成平台的原生发布格式
 5. 部署（Deploy）：将版本部署到目标设备
 6. 运行（Run）：在目标平台上启动已打包的项目
+
+### 3.2 构建
+
 
 ---
 ## 其他
