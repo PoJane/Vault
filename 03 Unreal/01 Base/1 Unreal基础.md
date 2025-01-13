@@ -87,7 +87,7 @@ UE中的不只有内置的工具和编辑器，也有可选插件（Plugins）�
 
 1. 关卡编辑器
 ```avatar
-image: image 03_1_LevelEditor.png
+image: Z-images/image 03_1_LevelEditor.png
 ```
 
 
