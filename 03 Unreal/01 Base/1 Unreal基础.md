@@ -112,8 +112,8 @@ description: 蓝图编辑器（Blueprint Editor）是使用和修改蓝图的编
 
 5. 物理资源编辑器
 ```avatar
-image: image 03_01_01_PhysicsAssetEditor.png
 description: 物理资产编辑器可创建并编辑物理资产，以配合骨骼网格体使用。物理资产用于实现变形和碰撞等物理特性，在物理资产编辑器中可从零开始创建完整设置或使用自动化工具来创建一套基本的物理形体和约束。
+image: Z-images/image 03_01_01_PhysicsAssetEditor.png
 ```
 
 6. 行为树编辑器
@@ -137,9 +137,40 @@ description: 物理资产编辑器可创建并编辑物理资产，以配合骨�
 15. nDisplay 3D配置编辑器
 
 #### 4. 坐标空间
-##### a. 空间
+##### a. 空间及其变换
+1. 切线（Tangent）
+正交空间，可以是左旋或右旋。
+TangentToLocal变换仅包含旋转，因此是OrthoNormal
 
+2. 局部（Local）
+也成为对象空间（Object Space），正交，可以是左旋或右旋（三角形剔除顺序需要调整）
+LocalToWorld变换包含旋转、非等分缩放（包括可能改变缠绕顺序的负非等分缩放）和平移。
 
+3. 世界场景（World）
+世界场景即
+WorldToView变换仅包含旋转和平移，因此视图空间中的距离与世界场景空间中的距离相同。
+
+4. 平移世界场景（Translated World）
+平移世界场景即世界场景+预览平移。平移的矩阵用于从组合的变换矩阵中移除摄像机位置，可在变换顶点时提高精度。
+
+5. 视图（View）
+视图即摄像机空间（Camera Space），
+ViewToClip变换包含$x$轴和$y$轴上的缩放，但不包含平移（如果平移的话将会是偏心投影）。变换在$z$轴上缩放平移，还会应用投影来转换为齐次裁剪空间。
+
+6. 裁剪（Clip）
+也称为齐次坐标空间（Homogenious Coordinates Space）、后投影空间（Post Projection Space）、投影空间（Projection Space），是应用透视投影矩阵之后的空间。
+裁剪空间中的W与视图空间中的Z相同。
+
+7. 屏幕（Screen）
+OpenGL中的标准化设备坐标（Normalized Device Coordinate），经过透视分割后，（左，右）为（-1，1），（上，下）为（1，-1），（近，远）为（0，1）
+
+8. 视口（Viewport）
+也称为视口坐标（Viewport Coordinate）、窗口坐标（Windows Coordinate），以像素为单位。（左，右）对应（0，WIDTH-1），（上，下）对应（0，HEIGHT-1）
+
+##### b. 空间变换
+WorldToView：
+TranslatedWorldToView：
+TangentToWorld：
 
 ---
 ## 其他
