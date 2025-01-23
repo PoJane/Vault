@@ -24,19 +24,7 @@
             }
           },
           {
-            "id": "92a4900b13ae1f75",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Z-images/image 03_01_01_PhysicsAssetEditor.png"
-              },
-              "icon": "lucide-image",
-              "title": "image 03_01_01_PhysicsAssetEditor"
-            }
-          },
-          {
-            "id": "6b87028b7d19bbbd",
+            "id": "3e405ed7e8e8dcb6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +38,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "06eff7bc4f5f56a4",
@@ -225,14 +212,16 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "6b87028b7d19bbbd",
+  "active": "3e405ed7e8e8dcb6",
   "lastOpenFiles": [
     "03 Unreal/01 Base/3 Unreal工具.md",
     "03 Unreal/01 Base/2 Unreal项目.md",
     "03 Unreal/01 Base/1 Unreal基础.md",
+    "未命名看板.md",
     "Z-images/image 03_01_01_PhysicsAssetEditor.png",
     "Z-images/image 03_01_01_BlueprintEditor.png",
     "Z-images/image 03_01_01_MaterialEditor.png",
