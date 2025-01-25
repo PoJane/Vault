@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Unreal/01 Base/1 Unreal基础.md",
+                "file": "03 Unreal/02 Blueprints/1 蓝图概述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 Unreal基础"
+              "title": "1 蓝图概述"
             }
           }
         ],
@@ -174,11 +174,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "03 Unreal/01 Base/1 Unreal基础.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "1 Unreal基础 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -216,18 +214,18 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "3e405ed7e8e8dcb6",
+  "active": "f785125fb2dbaa82",
   "lastOpenFiles": [
+    "03 Unreal/02 Blueprints/1 蓝图概述.md",
+    "03 Unreal/01 Base/1 Unreal基础.md",
     "03 Unreal/01 Base/3 Unreal工具.md",
     "03 Unreal/01 Base/2 Unreal项目.md",
-    "03 Unreal/01 Base/1 Unreal基础.md",
     "未命名看板.md",
     "Z-images/image 03_01_01_PhysicsAssetEditor.png",
     "Z-images/image 03_01_01_BlueprintEditor.png",
     "Z-images/image 03_01_01_MaterialEditor.png",
     "Z-images/image 03_01_01_StaticMeshEditor.png",
     "README.md",
-    "03 Unreal/02 Blueprints/1 蓝图概述.md",
     "Z-images/image 03_01_01_LevelEditor.png",
     "01 Base",
     "Z-images",
